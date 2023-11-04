@@ -1,0 +1,49 @@
+@import "../defaults/colors";
+@import "../defaults/breakpoints";
+@import "./utils";
+
+footer {
+    display: flex;
+    margin-top: auto;
+    justify-content: center; 
+    align-items: center; 
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    height: 60px;
+    background-color: #ffffff;
+    flex-grow: 0;
+    flex-shrink: 0;
+    
+
+    .social-media {
+        display: flex;
+        align-items: center;
+        margin-right: 32px; // Space between .social-media and .info on wider screens
+
+        a {
+            i {
+                font-size: 24px;
+                color: black;
+                margin-right: 20px; // Adds some space between icons
+                padding: 24px;
+
+                &:last-child { // Remove margin for the last icon
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+
+    .info {
+        color: black;
+    }
+}
+
+// Media query for footer
+@media screen and (min-width: $medium) {
+    footer {
+        justify-content: space-between; // Distribute space between .social-media and .info on wider screens
+        padding: 0 20px; // Add padding on the sides for larger screens
+    }
+}

@@ -1,0 +1,47 @@
+@import "../../style";
+
+body {
+     // sets background image with parallax effect
+     .backgroundimage {
+        background-image: url("../../img/background.jpg");
+        z-index: -1;
+        height: 100vh;
+        width: 100vw;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+     // Center and style the body text. 
+     .hello {
+        position: absolute;
+        text-align: center;
+        color: white;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        .cta-button {
+            margin-top: 20px;
+
+            a {
+                display: inline-block;
+                background-color: $primarycolor;
+                color: white;
+                padding: 10px 20px;
+                cursor: pointer;
+                transition: background-color 0.3s;
+                border-radius: 8px;
+
+                &:hover {
+                    background-color: darken($primarycolor, 10%);
+                }
+            }
+        }
+    }
+}
+
+body {
+    font:100;
+}

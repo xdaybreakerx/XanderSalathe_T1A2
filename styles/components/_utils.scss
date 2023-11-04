@@ -1,0 +1,35 @@
+@import "../defaults/colors";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: 'Cormorant Garamond', serif;
+
+    // wrapper is used to have a sticky footer
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        min-height: 100vh;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+
+        &:hover {
+            color: $primarycolor;
+            transition-duration: 0.5s;
+        }
+    }
+
+    li {
+        list-style: none;
+    }
+    
+}
