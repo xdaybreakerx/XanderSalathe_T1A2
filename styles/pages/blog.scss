@@ -1,0 +1,94 @@
+@import "../../style";
+
+
+main {
+    h1 {
+        text-align: center;
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+}
+
+.card-parent {
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 24px;
+  
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: 20px;
+}
+
+.card {
+  background: white;
+  text-decoration: none;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+  
+  &:hover {
+    top: -2px;
+    box-shadow: 0 8px 8px rgba(0,0,0,0.2);
+  }
+
+  .thumb {
+    padding-top: 4px;
+    padding-bottom: 60%;
+    background-size: cover;
+    background-position: center center;
+  }
+  
+  article {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  h2 {
+    font-size: 20px;
+    margin: 0;
+    color: #333;
+    margin-bottom: 12px;
+    text-align: center;
+  }
+  
+  span {
+    font-size: 12px;
+    font-weight: bold;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    margin: 2em 0 0 0;
+  }
+}
+
+// Media Queries
+// Change amount of columns depending on screen size
+.card-parent {
+@media (min-width: $small) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  
+  @media (min-width: $medium) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+// Larger first blog post when on bigger display
+.item-1 {
+  @media (min-width: $large) {
+    grid-column: 1 / span 2;
+    
+    h2 {
+      font-size: 24px;
+    }
+  }
+}
