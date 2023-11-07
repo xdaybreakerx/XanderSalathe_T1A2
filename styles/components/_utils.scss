@@ -16,6 +16,8 @@ body {
         flex-direction: column;
         flex-grow: 1;
         min-height: 100vh;
+        padding: 0;
+        justify-content: space-between;
     }
 
     a {

@@ -1,0 +1,61 @@
+@import "../../style";
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; // With flex-grow this centers the .aboutme vertically within the wrapper
+    flex-grow: 1;
+    
+    .aboutme {
+        margin-top: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .about-image {
+            img {
+                height: 300px;
+                border-radius: 64px;
+                padding: 16px;
+            }
+        }
+
+        .about-text {
+            h1 {
+                text-align: center;
+            }
+            p {
+                font-size: 20px;
+                margin: 8px;
+                padding-top: 16px;
+                padding-bottom: 16px;
+            }
+        }
+    }
+}
+
+
+// responsive for smaller resolution screens
+body {
+    @media (max-width: $medium) {
+        .aboutme {
+            flex-direction: column;
+
+            .about-image {
+                text-align: center; // Center the image on smaller screens
+                order: 1; // Display the image below the text
+                padding: 0 16px; // Add padding to the container to keep spacing consistent.
+
+                img {
+                    width: 100%; 
+                    height: auto;
+                }
+            }
+
+            .about-text {
+                padding-left: 0;
+                order: 0; // Ensure the text is displayed above the image
+            }
+        }
+    }
+}
