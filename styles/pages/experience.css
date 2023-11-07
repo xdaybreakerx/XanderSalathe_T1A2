@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Cormorant Garamond", serif;
+}
+body .wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  min-height: 100vh;
+  padding: 0px;
+  justify-content: space-between;
+}
+body a {
+  text-decoration: none;
+  color: black;
+}
+body a:hover {
+  color: red;
+  transition-duration: 0.5s;
+}
+body li {
+  list-style: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Cormorant Garamond", serif;
+}
+body .wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  min-height: 100vh;
+  padding: 0px;
+  justify-content: space-between;
+}
+body a {
+  text-decoration: none;
+  color: black;
+}
+body a:hover {
+  color: red;
+  transition-duration: 0.5s;
+}
+body li {
+  list-style: none;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  height: 65px;
+  padding: 1em;
+  font-size: 24px;
+}
+nav #menu_checkbox {
+  display: none;
+}
+nav .logo {
+  margin-top: 16px;
+}
+nav .menu {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 1;
+}
+nav .menu li:hover {
+  cursor: pointer;
+}
+nav .menu > li {
+  margin: 0 1rem;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  nav label {
+    margin-top: 24px;
+    right: 1em;
+    z-index: 1001;
+    color: black;
+    width: 30px;
+    height: 30px;
+    transform: translateY(-50%);
+    transition: 0.3s ease transform;
+    cursor: pointer;
+  }
+  nav label div {
+    width: 30px;
+    height: 6px;
+    background-color: black;
+    margin-left: 0;
+    margin-bottom: 6px;
+    border-radius: 4px;
+    transition: 0.3s ease width, 0.3s ease margin-left, 0.3s ease margin-bottom, 0.3s ease background-color;
+  }
+  nav .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: white;
+    z-index: 1000;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.3s linear;
+    font-size: xx-large;
+    line-height: 1.5;
+  }
+  nav #menu_checkbox:checked ~ .menu {
+    visibility: visible;
+    opacity: 1;
+  }
+  nav #menu_checkbox:checked + label {
+    transform: translateY(-50%) rotateZ(-90deg);
+  }
+  nav #menu_checkbox:checked + label div {
+    width: 6px;
+    margin-left: 12px;
+    margin-bottom: 3px;
+    background-color: red;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Cormorant Garamond", serif;
+}
+body .wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  min-height: 100vh;
+  padding: 0px;
+  justify-content: space-between;
+}
+body a {
+  text-decoration: none;
+  color: black;
+}
+body a:hover {
+  color: red;
+  transition-duration: 0.5s;
+}
+body li {
+  list-style: none;
+}
+
+footer {
+  display: flex;
+  margin-top: auto;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  height: 60px;
+  background-color: #ffffff;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+footer .social-media {
+  display: flex;
+  align-items: center;
+  margin-right: 32px;
+}
+footer .social-media a i {
+  font-size: 24px;
+  color: black;
+  margin-right: 20px;
+  padding: 24px;
+}
+footer .social-media a i:last-child {
+  margin-right: 0;
+}
+footer .info {
+  color: black;
+}
+
+@media screen and (min-width: 768px) {
+  footer {
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+}
+.container {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  flex-grow: 1;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.container .leftSide {
+  position: relative;
+  padding: 40px;
+}
+.container .rightSide {
+  position: relative;
+  padding: 40px;
+}
+
+.leftSide .title {
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 12px;
+}
+.leftSide h3 {
+  padding-top: 12px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding-bottom: 12px;
+}
+.leftSide .contactInfo {
+  padding-top: 40px;
+}
+.leftSide .contactInfo ul {
+  position: relative;
+}
+.leftSide .contactInfo ul li {
+  position: relative;
+  list-style: none;
+  margin: 10px 0;
+  cursor: pointer;
+}
+.leftSide .contactInfo ul li .icon {
+  display: inline-block;
+  width: 30px;
+  font-size: 18px;
+  color: red;
+}
+.leftSide .contactInfo ul li span {
+  font-weight: 300;
+}
+.leftSide .education span {
+  color: gray;
+}/*# sourceMappingURL=experience.css.map */
