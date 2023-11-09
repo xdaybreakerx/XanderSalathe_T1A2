@@ -5,6 +5,8 @@ main {
     flex-direction: column;
     justify-content: center; // With flex-grow this centers the .aboutme vertically within the wrapper
     flex-grow: 1;
+    width: 90%;
+    margin: auto;
     
     .aboutme {
         margin-top: 32px;
@@ -14,10 +16,10 @@ main {
 
         .about-image {
             img {
-                height: 300px;
+                max-width: clamp(300px, 400px, 500px);
                 border-radius: 64px;
                 padding: 16px;
-            }
+                        }
         }
 
         .about-text {
@@ -37,7 +39,7 @@ main {
 
 // responsive for smaller resolution screens
 body {
-    @media (max-width: $medium) {
+    @media (max-width: $large) {
         .aboutme {
             flex-direction: column;
 

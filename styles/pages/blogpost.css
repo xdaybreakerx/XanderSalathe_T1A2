@@ -217,50 +217,35 @@ footer .info {
     padding: 0 20px;
   }
 }
-main {
+.blogpost {
+  margin-top: 32px;
+  width: 90%;
+  max-width: 850px;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  flex-grow: 1;
-  width: 90%;
-  margin: auto;
-}
-main .aboutme {
-  margin-top: 32px;
-  display: flex;
   align-items: center;
   justify-content: center;
 }
-main .aboutme .about-image img {
-  max-width: 400px;
+.blogpost .blog-image img {
+  display: flex;
+  height: 300px;
   border-radius: 64px;
   padding: 16px;
+  margin: auto;
 }
-main .aboutme .about-text h1 {
+.blogpost .intro h1 {
   text-align: center;
 }
-main .aboutme .about-text p {
+.blogpost .intro p {
   font-size: 20px;
   margin: 8px;
   padding-top: 16px;
   padding-bottom: 16px;
 }
-
-@media (max-width: 769px) {
-  body .aboutme {
-    flex-direction: column;
-  }
-  body .aboutme .about-image {
-    text-align: center;
-    order: 1;
-    padding: 0 16px;
-  }
-  body .aboutme .about-image img {
-    width: 100%;
-    height: auto;
-  }
-  body .aboutme .about-text {
-    padding-left: 0;
-    order: 0;
-  }
-}/*# sourceMappingURL=about.css.map */
+.blogpost .body-text p {
+  font-size: 18px;
+  padding-bottom: 16px;
+  margin: 8px;
+}/*# sourceMappingURL=blogpost.css.map */

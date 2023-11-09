@@ -222,45 +222,43 @@ main {
   flex-direction: column;
   justify-content: center;
   flex-grow: 1;
-  width: 90%;
-  margin: auto;
 }
-main .aboutme {
+main .contact {
   margin-top: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-main .aboutme .about-image img {
-  max-width: 400px;
-  border-radius: 64px;
+main .contact .contact-image img {
+  height: 300px;
+  border-radius: 32px;
   padding: 16px;
 }
-main .aboutme .about-text h1 {
+main .contact .about-text h1 {
   text-align: center;
 }
-main .aboutme .about-text p {
+main .contact .about-text p {
   font-size: 20px;
   margin: 8px;
   padding-top: 16px;
   padding-bottom: 16px;
 }
 
-@media (max-width: 769px) {
-  body .aboutme {
+@media (max-width: 768px) {
+  body .contact {
     flex-direction: column;
   }
-  body .aboutme .about-image {
+  body .contact .contact-image {
     text-align: center;
     order: 1;
     padding: 0 16px;
   }
-  body .aboutme .about-image img {
+  body .contact .contact-image img {
     width: 100%;
     height: auto;
   }
-  body .aboutme .about-text {
+  body .contact .contact-text {
     padding-left: 0;
     order: 0;
   }
-}/*# sourceMappingURL=about.css.map */
+}/*# sourceMappingURL=contact.css.map */

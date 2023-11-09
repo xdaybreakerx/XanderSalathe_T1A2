@@ -1,0 +1,45 @@
+@import "../../style";
+
+.blogpost {
+    margin-top: 32px;
+    width: 90%;
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    .blog-image {
+        img {
+            display: flex;
+            height: 300px;
+            border-radius: 64px;
+            padding: 16px;
+            margin: auto;
+        }
+    }
+
+    .intro {
+        h1 {
+            text-align: center;
+        }
+        p {
+            font-size: 20px;
+            margin: 8px;
+            padding-top: 16px;
+            padding-bottom: 16px;
+        }
+    }
+
+
+    .body-text {
+        p {
+            font-size: 18px;
+            padding-bottom: 16px;
+            margin: 8px;
+
+        }
+    }
+}
