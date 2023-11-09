@@ -75,7 +75,7 @@ nav {
           right: 0; 
           bottom: 0; 
           background: white; 
-          z-index: 1000;
+          z-index: -1000;
           flex-direction: column;
           width: 100%;
           justify-content: center;
@@ -88,8 +88,11 @@ nav {
 
     // shows or hides the menu based on the checkbox state
       #menu_checkbox:checked ~ .menu {
+        z-index: 1000;
         visibility: visible;
         opacity: 1;
+                  
+
     }
 
     // animation for hamburger menu icon

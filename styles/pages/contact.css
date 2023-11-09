@@ -131,7 +131,7 @@ nav .menu > li {
     right: 0;
     bottom: 0;
     background: white;
-    z-index: 1000;
+    z-index: -1000;
     flex-direction: column;
     width: 100%;
     justify-content: center;
@@ -142,6 +142,7 @@ nav .menu > li {
     line-height: 1.5;
   }
   nav #menu_checkbox:checked ~ .menu {
+    z-index: 1000;
     visibility: visible;
     opacity: 1;
   }
