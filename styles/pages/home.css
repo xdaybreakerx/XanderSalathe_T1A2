@@ -27,6 +27,10 @@ body a:hover {
   color: #d37556;
   transition-duration: 0.5s;
 }
+body .fa-brands:hover {
+  color: #d37556;
+  transition-duration: 0.5s;
+}
 body li {
   list-style: none;
 }
@@ -57,6 +61,10 @@ body a {
   color: #0c2431;
 }
 body a:hover {
+  color: #d37556;
+  transition-duration: 0.5s;
+}
+body .fa-brands:hover {
   color: #d37556;
   transition-duration: 0.5s;
 }
@@ -173,6 +181,10 @@ body a {
   color: #0c2431;
 }
 body a:hover {
+  color: #d37556;
+  transition-duration: 0.5s;
+}
+body .fa-brands:hover {
   color: #d37556;
   transition-duration: 0.5s;
 }

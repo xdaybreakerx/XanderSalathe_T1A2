@@ -34,6 +34,11 @@ body {
         }
     }
 
+    .fa-brands:hover {
+            color: $primarycolor;
+            transition-duration: 0.5s;
+    }
+
     li {
         list-style: none;
     }
