@@ -7,7 +7,8 @@
 }
 
 body {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: Inter, sans-serif;
+    background-color: $background-primary;
 
     // wrapper is used to have a sticky footer
     .wrapper {
@@ -19,9 +20,13 @@ body {
         justify-content: space-between;
     }
 
+    p {
+        color: $background-dark;
+    }
+
     a {
         text-decoration: none;
-        color: black;
+        color: $background-dark;
 
         &:hover {
             color: $primarycolor;

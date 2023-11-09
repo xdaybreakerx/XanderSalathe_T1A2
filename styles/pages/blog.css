@@ -5,7 +5,8 @@
 }
 
 body {
-  font-family: "Cormorant Garamond", serif;
+  font-family: Inter, sans-serif;
+  background-color: #e1dad2;
 }
 body .wrapper {
   display: flex;
@@ -15,12 +16,15 @@ body .wrapper {
   padding: 0px;
   justify-content: space-between;
 }
+body p {
+  color: #0c2431;
+}
 body a {
   text-decoration: none;
-  color: black;
+  color: #0c2431;
 }
 body a:hover {
-  color: red;
+  color: #d37556;
   transition-duration: 0.5s;
 }
 body li {
@@ -34,7 +38,8 @@ body li {
 }
 
 body {
-  font-family: "Cormorant Garamond", serif;
+  font-family: Inter, sans-serif;
+  background-color: #e1dad2;
 }
 body .wrapper {
   display: flex;
@@ -44,12 +49,15 @@ body .wrapper {
   padding: 0px;
   justify-content: space-between;
 }
+body p {
+  color: #0c2431;
+}
 body a {
   text-decoration: none;
-  color: black;
+  color: #0c2431;
 }
 body a:hover {
-  color: red;
+  color: #d37556;
   transition-duration: 0.5s;
 }
 body li {
@@ -136,7 +144,7 @@ nav .menu > li {
     width: 6px;
     margin-left: 12px;
     margin-bottom: 3px;
-    background-color: red;
+    background-color: #d37556;
   }
 }
 * {
@@ -146,7 +154,8 @@ nav .menu > li {
 }
 
 body {
-  font-family: "Cormorant Garamond", serif;
+  font-family: Inter, sans-serif;
+  background-color: #e1dad2;
 }
 body .wrapper {
   display: flex;
@@ -156,12 +165,15 @@ body .wrapper {
   padding: 0px;
   justify-content: space-between;
 }
+body p {
+  color: #0c2431;
+}
 body a {
   text-decoration: none;
-  color: black;
+  color: #0c2431;
 }
 body a:hover {
-  color: red;
+  color: #d37556;
   transition-duration: 0.5s;
 }
 body li {
@@ -177,7 +189,7 @@ footer {
   position: relative;
   bottom: 0;
   height: 60px;
-  background-color: #ffffff;
+  background-color: #e1dad2;
   flex-grow: 0;
   flex-shrink: 0;
 }
@@ -252,7 +264,7 @@ main h1 {
 .card h2 {
   font-size: 20px;
   margin: 0;
-  color: #333;
+  color: #0c2431;
   margin-bottom: 12px;
   text-align: center;
 }

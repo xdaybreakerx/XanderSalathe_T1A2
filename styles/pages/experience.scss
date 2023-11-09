@@ -1,72 +1,180 @@
 @import "../../style";
 
 
+// Variables
+$primary-color: #d37556;
+$text-color: #e1dad2;
 
+// Common styles
+main {
+	color: white;
+    font-size: 10px;
+}
+
+
+img {
+	width: 100%;
+}
+
+.title {
+    color: $primary-color;
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.description {
+	margin-top: 1rem;
+	font-size: 1.5rem;
+	font-weight: 400;
+	color: $text-color;
+}
+
+
+// Page Layout
 .container {
-    position: relative;
-    width: 100%;
-    background: #fff;
-    flex-grow: 1;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+	max-width: 1000px;
+	width: 90%;
+	margin: 0 auto;
+	display: grid;
+	padding: 5rem;
+	background: #194a50;
+	grid-template-columns: 1fr 1fr;
+	gap: 4rem;
+    border-radius: 16px;
+}
 
-    .leftSide {
-        position: relative;
-        padding: 40px;
-    }
+.profile {
+	grid-column: 1 / -1;
+	margin-bottom: 2rem;
+}
 
-    .rightSide {
-        position: relative;
-        padding: 40px;
+.column {
+    &-1,
+    &-2 {
+    	display: flex;
+    	flex-direction: column;
+    	gap: 5rem;
     }
 }
 
-.leftSide {
-    .title {
-        text-align: center;
-        text-transform: uppercase;
-        padding-bottom: 12px;
-    }
-    
-    h3 {
-        padding-top: 12px;
-        text-transform: uppercase;
-        font-weight: 600;
-        letter-spacing: 1px;
-        padding-bottom: 12px;
-    }
-    .contactInfo {
-        padding-top: 40px;
-        
-    
-        ul {
-       position: relative;
-       }
-        
-       ul li {
-           position: relative;
-           list-style: none;
-           margin: 10px 0;
-           cursor: pointer;
-       }
 
-       ul li .icon {
-           display: inline-block;
-           width: 30px;
-           font-size: 18px;
-           color: $primarycolor;
-       }
-
-       ul li span {
-        font-weight: 300;
-       }
+// Profile section styling
+.profile {
+    &_container {
+    	display: flex;
+    	gap: 2rem;
     }
-    
-    .education {
-        span {
-            color: gray;
+
+    &_name {
+        &_firstName {
+            text-transform: uppercase;
+            color: white;
+            font-weight: 200;
+            font-size: clamp(2rem, 8vw, 4rem);
+            text-transform: uppercase;
+            display: block;
+            margin-bottom: -0.8rem;
+        }
+
+        &_lastName {
+            text-transform: uppercase;
+            color: $primary-color;
+            font-weight: 700;
+            font-size: clamp(2.5rem, 15vw, 7rem);
+            text-transform: uppercase;
+            display: block;
         }
     }
 
+    &_title {
+        font-size: 1.5rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: white;
+    }
+    
+    .resumedownload {
+        display: block;
+        text-decoration: underline;
+        font-size: 1.6rem;
+        margin-top: 1rem;
+        color: #e1dad2;
+    }
+}
 
+
+// Expertise section styling
+.skills_list {
+	margin-top: 1rem;
+	margin-left: 2rem;
+	line-height: 2;
+}
+
+// Font styling for Education, Experience and Projects section titles
+.edu_child,
+.exp_child, 
+.project_child {
+	margin-top: 2rem;
+    
+    .item_years {
+    	font-size: 1.4rem;
+    	color: $primary-color;
+    	font-weight: 300;
+    }
+    
+    .item_title {
+    	font-size: 1.6rem;
+    	color: white;
+    	font-weight: 500;
+    	margin: 0.8rem 0;
+    }
+
+    .item_subtitle {
+    	font-size: 1.4rem;
+    	color: $primary-color;
+    	font-weight: 400;
+    }
+}
+
+
+// Interests section styling
+.interest {
+    &_parent {
+        margin-top: 2rem;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+    
+    &_child {
+        font-size: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        color: $text-color;
+    }
+}
+
+
+// Media queries
+@media only screen and (max-width: $medium) {
+	.profile_container {
+		flex-direction: column;
+	}
+
+	.container {
+		width: 100%;
+		grid-template-columns: 1fr;
+		padding: 3rem;
+		gap: 7rem;
+        border-radius: 0px;
+	}
+
+	.profile {
+		margin-bottom: 0;
+	}
 }
