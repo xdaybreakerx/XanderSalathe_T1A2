@@ -1,46 +1,45 @@
 @import "../defaults/colors";
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: Inter, sans-serif;
-    background-color: $background-primary;
+  font-family: Inter, sans-serif;
+  background-color: $background-primary;
 
-    // wrapper is used to have a sticky footer
-    .wrapper {
-        display: flex;
-        flex-direction: column;
-        flex-grow: 1;
-        min-height: 100vh;
-        padding: 0px;
-        justify-content: space-between;
+  // wrapper is used to have a sticky footer
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    min-height: 100vh;
+    padding: 0px;
+    justify-content: space-between;
+  }
+
+  p {
+    color: $background-dark;
+  }
+
+  a {
+    text-decoration: none;
+    color: $background-dark;
+
+    &:hover {
+      color: $primarycolor;
+      transition-duration: 0.5s;
     }
+  }
 
-    p {
-        color: $background-dark;
-    }
+  .fa-brands:hover {
+    color: $primarycolor;
+    transition-duration: 0.5s;
+  }
 
-    a {
-        text-decoration: none;
-        color: $background-dark;
-
-        &:hover {
-            color: $primarycolor;
-            transition-duration: 0.5s;
-        }
-    }
-
-    .fa-brands:hover {
-            color: $primarycolor;
-            transition-duration: 0.5s;
-    }
-
-    li {
-        list-style: none;
-    }
-    
+  li {
+    list-style: none;
+  }
 }

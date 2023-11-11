@@ -1,43 +1,85 @@
 @import "../../style";
 
 body {
-     // sets background image with parallax effect
-     .backgroundimage {
-        background-image: url("../../img/background.jpg");
-        z-index: -1;
-        height: 100%;
-        width: 100%;
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+  // sets background image with parallax effect
+  .backgroundimage {
+    background-image: url("../../img/background.jpg");
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  // Center and style the body text.
+  .hello {
+    position: absolute;
+    text-align: center;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    h1 {
+      font-size: 3rem;
+      padding-bottom: 16px;
+    }
+    h2 {
+      font-size: 2rem;
+      padding-bottom: 16px;
+    }
+    h3 {
+      font-size: 1.5rem;
     }
 
-     // Center and style the body text. 
-     .hello {
-        position: absolute;
-        text-align: center;
+    .parent-typing-effect {
+      display: flex;
+      justify-content: center;
+      .typing-effect {
+        animation: typing-animation 0.75s infinite,
+          change-width 1.5s steps(15, end) 1;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+    }
+
+    .cta-button {
+      padding-top: 32px;
+      min-width: 208px;
+
+      a {
+        display: inline-block;
+        background-color: $primarycolor;
         color: white;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        padding: 10px 20px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        border-radius: 8px;
 
-        .cta-button {
-            margin-top: 20px;
-
-            a {
-                display: inline-block;
-                background-color: $primarycolor;
-                color: white;
-                padding: 10px 20px;
-                cursor: pointer;
-                transition: background-color 0.3s;
-                border-radius: 8px;
-
-                &:hover {
-                    background-color: darken($primarycolor, 10%);
-                }
-            }
+        &:hover {
+          background-color: darken($primarycolor, 10%);
         }
+      }
     }
+  }
+}
+
+@keyframes typing-animation {
+  0% {
+    border-right: none;
+  }
+  100% {
+    border-right: 2px solid black;
+  }
+}
+
+@keyframes change-width {
+  0% {
+    width: 0;
+  }
+  75% {
+    width: 200px;
+  }
 }

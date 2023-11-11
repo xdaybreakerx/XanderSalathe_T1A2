@@ -3,40 +3,39 @@
 @import "../defaults/breakpoints";
 
 nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  height: 65px;
+  padding: 1em;
+  font-size: 24px;
 
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    color: white;
-    height: 65px;
-    padding: 1em;
-    font-size: 24px;
-
-    // Used for Hamburger menu on smaller screens
-    #menu_checkbox {
+  // Used for Hamburger menu on smaller screens
+  #menu_checkbox {
     display: none;
-    }
+  }
 
   .logo {
-      margin-top: 16px;
+    margin-top: 16px;
   }
 
   .menu {
-      display: flex;
-      flex-direction: row;
-      list-style-type: none;
-      margin: 0;
-      padding: 1;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 1;
 
-      li:hover {
-          cursor: pointer;
-      }
+    li:hover {
+      cursor: pointer;
+    }
 
-      > li {
-          margin: 0 1rem;
-          overflow: hidden;
-      }
+    > li {
+      margin: 0 1rem;
+      overflow: hidden;
+    }
   }
 }
 
@@ -44,67 +43,65 @@ nav {
 // This adds a Hamburger menu which when selected opens a full screen menu instead of a horizontal nav bar.
 
 @media (max-width: $medium) {
-    nav {
+  nav {
     label {
-        margin-top: 24px;
-        right: 1em;      
-        z-index: 1001;   // one value above the menu to ensure it's on top
-        color: black;
-        width: 30px;
-        height: 30px;
-        transform: translateY(-50%);
-        transition: 0.3s ease transform;
-        cursor: pointer;  
+      margin-top: 24px;
+      right: 1em;
+      z-index: 1001; // one value above the menu to ensure it's on top
+      color: black;
+      width: 30px;
+      height: 30px;
+      transform: translateY(-50%);
+      transition: 0.3s ease transform;
+      cursor: pointer;
 
-        div {
-            width: 30px;
-            height: 6px;
-            background-color: black;
-            margin-left: 0;
-            margin-bottom: 6px;
-            border-radius: 4px;
-            transition: 0.3s ease width, 0.3s ease margin-left, 0.3s ease margin-bottom,
-              0.3s ease background-color;
-          }
-    }
-    
-      .menu {
-          position: fixed; 
-          top: 0;
-          left: 0;
-          right: 0; 
-          bottom: 0; 
-          background: white; 
-          z-index: -1000;
-          flex-direction: column;
-          width: 100%;
-          justify-content: center;
-          align-items: center;
-          opacity: 0;
-          transition: visibility 0s, opacity 0.3s linear;
-          font-size: xx-large;
-          line-height: 1.5;
+      div {
+        width: 30px;
+        height: 6px;
+        background-color: black;
+        margin-left: 0;
+        margin-bottom: 6px;
+        border-radius: 4px;
+        transition: 0.3s ease width, 0.3s ease margin-left,
+          0.3s ease margin-bottom, 0.3s ease background-color;
       }
+    }
+
+    .menu {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: white;
+      z-index: -1000;
+      flex-direction: column;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      transition: visibility 0s, opacity 0.3s linear;
+      font-size: xx-large;
+      line-height: 1.5;
+    }
 
     // shows or hides the menu based on the checkbox state
-      #menu_checkbox:checked ~ .menu {
-        z-index: 1000;
-        visibility: visible;
-        opacity: 1;
-                  
-
+    #menu_checkbox:checked ~ .menu {
+      z-index: 1000;
+      visibility: visible;
+      opacity: 1;
     }
 
     // animation for hamburger menu icon
-      #menu_checkbox:checked + label {
-        transform: translateY(-50%) rotateZ(-90deg);
-        
-        div {
-            width: 6px;
-            margin-left: 12px;
-            margin-bottom: 3px;
-            background-color: $primarycolor;
-        }
+    #menu_checkbox:checked + label {
+      transform: translateY(-50%) rotateZ(-90deg);
+
+      div {
+        width: 6px;
+        margin-left: 12px;
+        margin-bottom: 3px;
+        background-color: $primarycolor;
       }
+    }
   }
 }

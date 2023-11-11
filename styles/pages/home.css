@@ -248,8 +248,29 @@ body .hello {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+body .hello h1 {
+  font-size: 3rem;
+  padding-bottom: 16px;
+}
+body .hello h2 {
+  font-size: 2rem;
+  padding-bottom: 16px;
+}
+body .hello h3 {
+  font-size: 1.5rem;
+}
+body .hello .parent-typing-effect {
+  display: flex;
+  justify-content: center;
+}
+body .hello .parent-typing-effect .typing-effect {
+  animation: typing-animation 0.75s infinite, change-width 1.5s steps(15, end) 1;
+  white-space: nowrap;
+  overflow: hidden;
+}
 body .hello .cta-button {
-  margin-top: 20px;
+  padding-top: 32px;
+  min-width: 208px;
 }
 body .hello .cta-button a {
   display: inline-block;
@@ -262,4 +283,21 @@ body .hello .cta-button a {
 }
 body .hello .cta-button a:hover {
   background-color: #c35733;
+}
+
+@keyframes typing-animation {
+  0% {
+    border-right: none;
+  }
+  100% {
+    border-right: 2px solid black;
+  }
+}
+@keyframes change-width {
+  0% {
+    width: 0;
+  }
+  75% {
+    width: 200px;
+  }
 }/*# sourceMappingURL=home.css.map */
