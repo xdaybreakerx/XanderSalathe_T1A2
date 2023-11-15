@@ -261,9 +261,8 @@ main .aboutme .about-text h1 {
 }
 main .aboutme .about-text p {
   font-size: 20px;
-  margin: 8px;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 
 @media (max-width: 769px) {

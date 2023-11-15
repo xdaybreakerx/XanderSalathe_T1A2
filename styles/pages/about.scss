@@ -7,7 +7,7 @@ main {
   flex-grow: 1;
   width: 90%;
   margin: auto;
-
+  
   .aboutme {
     margin-top: 32px;
     display: flex;
@@ -35,9 +35,8 @@ main {
       }
       p {
         font-size: 20px;
-        margin: 8px;
-        padding-top: 16px;
-        padding-bottom: 16px;
+        margin-top: 16px;
+        margin-bottom: 16px;
       }
     }
   }

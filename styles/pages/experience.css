@@ -246,9 +246,10 @@ img {
   text-transform: uppercase;
 }
 
-.description {
-  margin-top: 1rem;
-  font-size: 1.5rem;
+.description p {
+  font-size: 20px;
+  margin-top: 16px;
+  margin-bottom: 16px;
   font-weight: 400;
   color: #e1dad2;
 }
@@ -315,6 +316,11 @@ img {
   margin-top: 1rem;
   margin-left: 2rem;
   line-height: 2;
+  font-size: 20px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  font-weight: 400;
+  color: #e1dad2;
 }
 
 .edu_child,
@@ -367,11 +373,11 @@ img {
     flex-direction: column;
   }
   .container {
-    width: 100%;
+    width: 90%;
     grid-template-columns: 1fr;
     padding: 3rem;
     gap: 7rem;
-    border-radius: 0px;
+    border-radius: 8px;
   }
   .profile {
     margin-bottom: 0;
