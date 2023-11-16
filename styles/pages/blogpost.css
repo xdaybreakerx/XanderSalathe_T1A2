@@ -230,7 +230,7 @@ footer .info {
     padding: 0 20px;
   }
 }
-.blogpost {
+article {
   margin-top: 32px;
   width: 90%;
   max-width: 850px;
@@ -241,23 +241,23 @@ footer .info {
   align-items: center;
   justify-content: center;
 }
-.blogpost .blog-image img {
+article .blog-image img {
   display: flex;
   height: 300px;
   border-radius: 64px;
   padding: 16px;
   margin: auto;
 }
-.blogpost .intro h1 {
+article .intro h1 {
   text-align: center;
 }
-.blogpost .intro p {
+article .intro p {
   font-size: 20px;
   margin: 8px;
   padding-top: 16px;
   padding-bottom: 16px;
 }
-.blogpost .body-text p {
+article .body-text p {
   font-size: 18px;
   padding-bottom: 16px;
   margin: 8px;

@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Meta and Link Configuration -->
+    <!-- This section sets up the character encoding, viewport, page title, and links to stylesheets and fonts. -->
+    <!-- Includes styles, fonts, and icons used throughout the page. -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Xander Salathe</title>
@@ -26,45 +29,62 @@
   </head>
 
   <body>
-    <!-- Background Image -->
+    <!-- Background Image Container Component -->
+    <!-- This component wraps the entire page content and provides a background image. -->
     <div class="backgroundimage">
+      <!-- Wrapper is used for the sticky footer in combination with the CSS flex-grow property -->
       <div class="wrapper">
-        <nav>
-          <!-- LOGO -->
-          <div class="logo">
-            <a href="./index.html">
-              <img src="/img/favicon.ico" alt="Xander Salathe logo" />
-            </a>
-          </div>
+        <header>
+          <!-- Navigation Component -->
+          <!-- This component provides navigation links and includes a logo and a responsive hamburger menu for smaller screens. -->
+          <nav>
+            <!-- Logo Element -->
+            <!-- This element displays the site's logo and links to the home page. -->
+            <div class="logo">
+              <a href="./index.html">
+                <img src="/img/favicon.ico" alt="Xander Salathe logo" />
+              </a>
+            </div>
 
-          <!-- Hamburger menu icon for smaller devices -->
-          <input type="checkbox" id="menu_checkbox" />
-          <label for="menu_checkbox">
-            <div></div>
-            <div></div>
-            <div></div>
-          </label>
+            <!-- Hamburger menu icon for smaller devices -->
+            <!-- Checkbox is hidden at all times but acts as the flag for the hamburger menu -->
+            <input type="checkbox" id="menu_checkbox" />
+            <label for="menu_checkbox">
+              <div></div>
+              <div></div>
+              <div></div>
+            </label>
 
-          <!-- Navigation Menu Items -->
-          <ul class="menu">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./pages/about.html">About</a></li>
-            <li><a href="./pages/experience.html">Experience</a></li>
-            <li><a href="./pages/blog.html">Blog</a></li>
-            <li><a href="./pages/contact.html">Contact</a></li>
-          </ul>
-        </nav>
+            <!-- Navigation Menu -->
+            <!-- This unordered list defines the main navigation links of the site. -->
+            <ul class="menu">
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./pages/about.html">About</a></li>
+              <li><a href="./pages/experience.html">Experience</a></li>
+              <li><a href="./pages/blog.html">Blog</a></li>
+              <li><a href="./pages/contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </header>
 
         <main>
+          <!-- Main Content Component -->
+          <!-- This component contains the primary content of the page, including a greeting and a call-to-action button. -->
           <div class="hello">
+            <!-- Greeting Text -->
+            <!-- Headings here introduce the site owner and their profession. -->
             <h1>Hello World, I'm Xander &#128075;</h1>
             <h2>I'm a Junior Software Developer.</h2>
+            <!-- Typing Effect for 'Nice to meet you' -->
+            <!-- Nested divs create a typing effect for the greeting. -->
             <div class="parent-typing-effect">
               <div class="typing-effect">
                 <h3>Nice to meet you!</h3>
               </div>
             </div>
-
+            <!-- Call-to-Action Button -->
+            <!-- This link styled as a button invites users to explore the about page. -->
+            <!-- I didn't use a button element as this is a link used for navigation. This aids in accessibility. -->
             <div class="cta-button">
               <a href="./pages/about.html"> Lets get to know each other! </a>
             </div>
@@ -75,6 +95,9 @@
       </div>
 
       <footer>
+        <!-- Footer Component -->
+        <!-- This component contains social media links and contact information. -->
+        <!-- This is the graphical component for the social media icons. Icons provided from Fontawesome. -->
         <div class="social-media">
           <a href="https://github.com/xdaybreakerx/" target="_blank">
             <i class="fa-brands fa-github"></i>
@@ -83,7 +106,8 @@
             <i class="fa-brands fa-linkedin"></i>
           </a>
         </div>
-
+        <!-- Contact Information -->
+        <!-- Text-based contact details with an email link. -->
         <div class="info">
           <p>Contact: 0433 007 148</p>
           <p>

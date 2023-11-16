@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Meta and Link Configuration -->
+    <!-- This section sets up the character encoding, viewport, page title, and links to stylesheets and fonts. -->
+    <!-- Includes styles, fonts, and icons used throughout the page. -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Experience</title>
@@ -25,35 +28,47 @@
     />
   </head>
   <body>
+    <!-- Wrapper is used for the sticky footer in combination with the CSS flex-grow property -->
     <div class="wrapper">
-      <nav>
-        <!-- LOGO -->
-        <div class="logo">
-          <a href="../index.html">
-            <img src="/img/favicon.ico" alt="Xander Salathe logo" />
-          </a>
-        </div>
+      <header>
+        <!-- Navigation Component -->
+        <!-- This component provides navigation links and includes a logo and a responsive hamburger menu for smaller screens. -->
+        <nav>
+          <!-- Logo Element -->
+          <!-- This element displays the site's logo and links to the home page. -->
+          <div class="logo">
+            <a href="../index.html">
+              <img src="/img/favicon.ico" alt="Xander Salathe logo" />
+            </a>
+          </div>
 
-        <!-- Hamburger menu icon for smaller devices -->
-        <input type="checkbox" id="menu_checkbox" />
-        <label for="menu_checkbox">
-          <div></div>
-          <div></div>
-          <div></div>
-        </label>
+          <!-- Hamburger menu icon for smaller devices -->
+          <!-- Checkbox is hidden at all times but acts as the flag for the hamburger menu -->
+          <input type="checkbox" id="menu_checkbox" />
+          <label for="menu_checkbox">
+            <div></div>
+            <div></div>
+            <div></div>
+          </label>
 
-        <!-- Navigation Menu Items -->
-        <ul class="menu">
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="./about.html">About</a></li>
-          <li><a href="./experience.html">Experience</a></li>
-          <li><a href="./blog.html">Blog</a></li>
-          <li><a href="./contact.html">Contact</a></li>
-        </ul>
-      </nav>
+          <!-- Navigation Menu -->
+          <!-- This unordered list defines the main navigation links of the site. -->
+          <ul class="menu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./experience.html">Experience</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
 
       <main>
+        <!-- Main Container -->
+        <!-- This section presents the professional profile, skills, education, experience, projects, and interests. -->
         <div class="container">
+          <!-- Profile Section -->
+          <!-- This section displays the profile image and a brief introduction, including name and professional title. -->
           <div class="profile">
             <div class="profile_container">
               <div class="profile_profileImg">
@@ -79,7 +94,11 @@
               </div>
             </div>
           </div>
+          <!-- Skills, Education, and Experience Columns -->
+          <!-- This section is divided into columns to present skills, education, and professional experience. -->
           <div class="column-1">
+            <!-- Skills Section -->
+            <!-- Lists key skills relevant to the professional domain. -->
             <div class="skills">
               <h3 class="title">Expertise</h3>
               <ul class="skills_list">
@@ -89,7 +108,8 @@
                 <li>Git/GitHub</li>
               </ul>
             </div>
-
+            <!-- Education Section -->
+            <!-- Details academic qualifications and institutes attended. -->
             <div class="edu_parent">
               <h3 class="title">Education</h3>
               <div class="edu_child">
@@ -98,25 +118,26 @@
                 <p class="item_subtitle">Coder Academy</p>
               </div>
             </div>
-
+            <!-- Experience Section -->
+            <!-- Showcases work experience and roles held in previous employment. -->
             <div class="exp_parent">
               <h3 class="title">Experience</h3>
+              <!-- Each child represents a different role or period of employment. -->
               <div class="exp_child">
                 <p class="item_years">2017 - present</p>
                 <h4 class="item_title">Apple</h4>
                 <p class="item_subtitle">Multiple Roles and Promotions</p>
                 <p class="item_subtitle">Lead (Temporary Assignment)</p>
                 <div class="description">
-                <p>
-                  Lead the focus on customer experience, resulting in the
-                  highest Sales NPS in Australia during Q1 2023.
-                </p>
-                <p>
-                  Day-to-day responsibilities include schedule management,
-                  rostering/zoning and team coaching for 150+ Sales/ Service
-                  team members.
-                </p>
-
+                  <p>
+                    Lead the focus on customer experience, resulting in the
+                    highest Sales NPS in Australia during Q1 2023.
+                  </p>
+                  <p>
+                    Day-to-day responsibilities include schedule management,
+                    rostering/zoning and team coaching for 150+ Sales/ Service
+                    team members.
+                  </p>
                 </div>
               </div>
               <div class="exp_child">
@@ -131,7 +152,11 @@
               </div>
             </div>
           </div>
+          <!-- Projects and Interests Column -->
+          <!-- This column covers personal projects and hobbies or interests. -->
           <div class="column-2">
+            <!-- Projects Section -->
+            <!-- Describes various personal and academic projects undertaken. -->
             <div class="project_parent">
               <h3 class="title">Projects</h3>
               <div class="project_child">
@@ -142,35 +167,26 @@
                     Website portfolio example. Utilised HTML and CSS to create a
                     responsive design.
                   </p>
-                  <p>
-                    SCSS was used for better code management.
-                  </p>
-                  <p>
-                    Used both Flexbox and CSS grid layout models.
-                  </p>
-                  <p>
-                    Deployed with Netlify.
-                  </p>
+                  <p>SCSS was used for better code management.</p>
+                  <p>Used both Flexbox and CSS grid layout models.</p>
+                  <p>Deployed with Netlify.</p>
                 </div>
               </div>
               <div class="project_child">
                 <p class="item_years">2023</p>
                 <h4 class="item_title">Python Dice Roller</h4>
                 <div class="description">
-                <p>
-                  Utilised Python to create a terminal based dice roller for the
-                  Dungeons and Dragons 5th Edition Barbarian.
-                </p>
+                  <p>
+                    Utilised Python to create a terminal based dice roller for
+                    the Dungeons and Dragons 5th Edition Barbarian.
+                  </p>
                 </div>
-                
               </div>
               <div class="project_child">
                 <p class="item_years">2022</p>
                 <h4 class="item_title">Personal Website</h4>
                 <div class="description">
-                  <p>
-                    Hosted on Google Cloud Platform (GCP).
-                  </p>
+                  <p>Hosted on Google Cloud Platform (GCP).</p>
                   <p>
                     Installed WordPress on Ubuntu 20.x with Nginx, MariaDB,
                     PHP7.4.
@@ -182,6 +198,8 @@
                 </div>
               </div>
             </div>
+            <!-- Interests Section -->
+            <!-- Highlights personal interests with iconographic representations. -->
             <div class="interest">
               <h3 class="title">Interests</h3>
               <div class="interest_parent">
@@ -212,6 +230,9 @@
       </main>
 
       <footer>
+        <!-- Footer Component -->
+        <!-- This component contains social media links and contact information. -->
+        <!-- This is the graphical component for the social media icons. Icons provided from Fontawesome. -->
         <div class="social-media">
           <a href="https://github.com/xdaybreakerx/" target="_blank">
             <i class="fa-brands fa-github"></i>
@@ -220,10 +241,12 @@
             <i class="fa-brands fa-linkedin"></i>
           </a>
         </div>
-
+        <!-- Contact Information -->
+        <!-- Text-based contact details with an email link. -->
         <div class="info">
           <p>Contact: 0433 007 148</p>
           <p>
+            Email:
             <a href="mailto:hello@xandersalathe.com" target="_blank"
               >hello@xandersalathe.com</a
             >

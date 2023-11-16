@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Meta and Link Configuration -->
+    <!-- This section sets up the character encoding, viewport, page title, and links to stylesheets and fonts. -->
+    <!-- Includes styles, fonts, and icons used throughout the page. -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Intro to Python</title>
@@ -25,37 +28,50 @@
     />
   </head>
   <body>
+    <!-- Wrapper is used for the sticky footer in combination with the CSS flex-grow property -->
     <div class="wrapper">
-      <nav>
-        <!-- LOGO -->
-        <div class="logo">
-          <a href="../../index.html">
-            <img src="/img/favicon.ico" alt="Xander Salathe logo" />
-          </a>
-        </div>
+      <header>
+        <!-- Navigation Component -->
+        <!-- This component provides navigation links and includes a logo and a responsive hamburger menu for smaller screens. -->
+        <nav>
+          <!-- Logo Element -->
+          <!-- This element displays the site's logo and links to the home page. -->
+          <div class="logo">
+            <a href="../../index.html">
+              <img src="/img/favicon.ico" alt="Xander Salathe logo" />
+            </a>
+          </div>
 
-        <!-- Hamburger menu icon for smaller devices -->
-        <input type="checkbox" id="menu_checkbox" />
-        <label for="menu_checkbox">
-          <div></div>
-          <div></div>
-          <div></div>
-        </label>
+          <!-- Hamburger menu icon for smaller devices -->
+          <!-- Checkbox is hidden at all times but acts as the flag for the hamburger menu -->
+          <input type="checkbox" id="menu_checkbox" />
+          <label for="menu_checkbox">
+            <div></div>
+            <div></div>
+            <div></div>
+          </label>
 
-        <!-- Navigation Menu Items -->
-        <ul class="menu">
-          <li><a href="../../index.html">Home</a></li>
-          <li><a href=".././about.html">About</a></li>
-          <li><a href=".././experience.html">Experience</a></li>
-          <li><a href=".././blog.html">Blog</a></li>
-          <li><a href=".././contact.html">Contact</a></li>
-        </ul>
-      </nav>
+          <!-- Navigation Menu -->
+          <!-- This unordered list defines the main navigation links of the site. -->
+          <ul class="menu">
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href=".././about.html">About</a></li>
+            <li><a href=".././experience.html">Experience</a></li>
+            <li><a href=".././blog.html">Blog</a></li>
+            <li><a href=".././contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
 
       <main>
-        <div class="blogpost">
+        <!-- Article Section -->
+        <!-- This section presents the content of a single article, including an introduction and detailed body text. -->
+        <article>
+          <!-- Introduction Block -->
+          <!-- This block introduces the topic of the article and sets the context for the reader. -->
           <div class="intro">
             <h1>Intro to Python</h1>
+            <!-- Introduction paragraphs providing a brief overview of the article's content. -->
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet
               vitae minima natus obcaecati ut.
@@ -72,16 +88,16 @@
               consequatur placeat, sequi omnis voluptate repellat commodi ipsum
               labore! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
             </p>
-
+            <!-- Article Image -->
+            <!-- An image related to the article's topic, enhancing the visual appeal and providing context. -->
             <div class="blog-image">
-              <img
-                src="../../img/blogpost/python.jpg"
-                alt="Python"
-              />
+              <img src="../../img/blogpost/python.jpg" alt="Python" />
             </div>
           </div>
-
+          <!-- Body Text Block -->
+          <!-- This section contains the main content of the article, elaborating on the topic in detail. -->
           <div class="body-text">
+            <!-- Detailed paragraphs expanding on the article's subject matter. -->
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Repellendus voluptatem, repellat ipsa perspiciatis nobis ea vel
@@ -116,10 +132,13 @@
               mollitia earum. Sint, unde.
             </p>
           </div>
-        </div>
+        </article>
       </main>
 
       <footer>
+        <!-- Footer Component -->
+        <!-- This component contains social media links and contact information. -->
+        <!-- This is the graphical component for the social media icons. Icons provided from Fontawesome. -->
         <div class="social-media">
           <a href="https://github.com/xdaybreakerx/" target="_blank">
             <i class="fa-brands fa-github"></i>
@@ -128,10 +147,12 @@
             <i class="fa-brands fa-linkedin"></i>
           </a>
         </div>
-
+        <!-- Contact Information -->
+        <!-- Text-based contact details with an email link. -->
         <div class="info">
           <p>Contact: 0433 007 148</p>
           <p>
+            Email:
             <a href="mailto:hello@xandersalathe.com" target="_blank"
               >hello@xandersalathe.com</a
             >
