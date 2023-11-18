@@ -253,6 +253,9 @@ main .aboutme .about-image img {
 main .aboutme .about-image img:hover {
   filter: none;
 }
+main .aboutme .about-text {
+  max-width: 900px;
+}
 main .aboutme .about-text h1 {
   text-align: center;
 }

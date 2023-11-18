@@ -34,6 +34,8 @@ main {
 
     // Styling for the .about-text
     .about-text {
+      max-width: 900px; // Consistent styling across all text bodies, so that when viewed on ultrawide monitors text does not expand across entire display.
+
       h1 {
         text-align: center;
       }
