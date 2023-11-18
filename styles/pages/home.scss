@@ -1,10 +1,11 @@
 @import "../../style";
 
+// Styling for the body element
 body {
-  // sets background image with parallax effect
+  // Setting a background image with a parallax effect
   .backgroundimage {
     background-image: url("../../img/background.jpg");
-    z-index: -1;
+    z-index: -1; // Positioned behind other elements
     height: 100%;
     width: 100%;
     background-attachment: fixed;
@@ -13,7 +14,7 @@ body {
     background-size: cover;
   }
 
-  // Center and style the body text.
+  // Centering and styling the body text
   .hello {
     position: absolute;
     text-align: center;
@@ -22,6 +23,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 
+    // Styling for various heading elements
     h1 {
       font-size: 3rem;
       padding-bottom: 16px;
@@ -34,6 +36,7 @@ body {
       font-size: 1.5rem;
     }
 
+    // Styling for a typing animation effect
     .parent-typing-effect {
       display: flex;
       justify-content: center;
@@ -45,6 +48,7 @@ body {
       }
     }
 
+    // Styling for a call-to-action button
     .cta-button {
       padding-top: 32px;
       min-width: 208px;
@@ -59,13 +63,14 @@ body {
         border-radius: 8px;
 
         &:hover {
-          background-color: darken($primarycolor, 10%);
+          background-color: darken($primarycolor, 10%); // Darken the background color on hover
         }
       }
     }
   }
 }
 
+// Keyframes for the typing animation - this is for the text input cursor
 @keyframes typing-animation {
   0% {
     border-right: none;
@@ -75,6 +80,7 @@ body {
   }
 }
 
+// Keyframes for changing width - this is for the letters being typed effet
 @keyframes change-width {
   0% {
     width: 0;

@@ -1,45 +1,48 @@
 @import "../../style";
 
+// Styling for the article element
 article {
-    margin-top: 32px;
-    width: 90%;
-    max-width: 850px;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    
-    .blog-image {
-        img {
-            display: flex;
-            height: 300px;
-            border-radius: 64px;
-            padding: 16px;
-            margin: auto;
-        }
+  margin-top: 32px;
+  width: 90%;
+  max-width: 900px; // On larger displays this keeps the text a reasonable width, to help ease of reading
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  // Styling for the .blog-image section within the article
+  .blog-image {
+    img {
+      display: flex;
+      height: 300px;
+      border-radius: 64px;
+      padding: 16px;
+      margin: auto;
     }
+  }
 
-    .intro {
-        h1 {
-            text-align: center;
-        }
-        p {
-            font-size: 20px;
-            margin: 8px;
-            padding-top: 16px;
-            padding-bottom: 16px;
-        }
+  // Styling for the .intro section within the article
+  .intro {
+    h1 {
+      text-align: center;
     }
-
-
-    .body-text {
-        p {
-            font-size: 18px;
-            padding-bottom: 16px;
-            margin: 8px;
-
-        }
+    p {
+      font-size: 20px;
+      margin: 8px;
+      padding-top: 16px;
+      padding-bottom: 16px;
     }
+  }
+  // Styling for the .body-text section within the article
+  .body-text {
+    p {
+      font-size: 18px;
+      padding-bottom: 16px;
+      margin: 8px;
+    }
+  }
 }
+
+// Due to simplicity of page, and use of flexbox no media queries needed to make page responsive to all devices.

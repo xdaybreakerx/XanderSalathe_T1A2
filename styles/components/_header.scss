@@ -2,6 +2,7 @@
 @import "../defaults/colors";
 @import "../defaults/breakpoints";
 
+// Styling for the navigation bar
 nav {
   display: flex;
   flex-direction: row;
@@ -12,15 +13,17 @@ nav {
   padding: 1em;
   font-size: 24px;
 
-  // Used for Hamburger menu on smaller screens
+  // Styling for the Hamburger menu checkbox (used on smaller screens)
   #menu_checkbox {
-    display: none;
+    display: none; // Hide the checkbox by default - this allows us to activate/deactivate the hamburger menu without it being apparent its a check box
   }
 
+  // Styling for the logo
   .logo {
     margin-top: 16px;
   }
 
+  // Styling for the navigation menu items
   .menu {
     display: flex;
     flex-direction: row;
@@ -39,9 +42,8 @@ nav {
   }
 }
 
-// Making the navbar responsive with Media Queries
+// Adding responsive behavior with Media Queries
 // This adds a Hamburger menu which when selected opens a full screen menu instead of a horizontal nav bar.
-
 @media (max-width: $medium) {
   nav {
     label {
@@ -66,7 +68,7 @@ nav {
           0.3s ease margin-bottom, 0.3s ease background-color;
       }
     }
-
+    // Styling for the menu when the screen size is reduced and menu hidden
     .menu {
       position: fixed;
       top: 0;
@@ -74,25 +76,25 @@ nav {
       right: 0;
       bottom: 0;
       background: white;
-      z-index: -1000;
+      z-index: -1000; // Initially, the menu is behind everything
       flex-direction: column;
       width: 100%;
       justify-content: center;
       align-items: center;
-      opacity: 0;
+      opacity: 0; // Initially, the menu is invisible
       transition: visibility 0s, opacity 0.3s linear;
       font-size: xx-large;
       line-height: 1.5;
     }
 
-    // shows or hides the menu based on the checkbox state
+    // Show or hide the menu based on the checkbox state
     #menu_checkbox:checked ~ .menu {
-      z-index: 1000;
+      z-index: 1000; // Bring the menu to the front when checkbox is checked
       visibility: visible;
-      opacity: 1;
+      opacity: 1; // Make the menu fully visible
     }
 
-    // animation for hamburger menu icon
+    // Animation for the Hamburger menu icon when checkbox is checked
     #menu_checkbox:checked + label {
       transform: translateY(-50%) rotateZ(-90deg);
 

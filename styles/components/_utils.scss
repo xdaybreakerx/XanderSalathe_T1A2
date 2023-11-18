@@ -1,44 +1,52 @@
 @import "../defaults/colors";
 
+// Resetting default styles for all elements
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+// Styling for the overall page body
 body {
   font-family: Inter, sans-serif;
   background-color: $background-primary;
 
-  // wrapper is used to have a sticky footer
+  // Creating a wrapper element for a sticky footer layout
+
   .wrapper {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    min-height: 100vh;
+    min-height: 100vh; // Minimum height to ensure the footer sticks to the bottom
     padding: 0px;
-    justify-content: space-between;
+    justify-content: space-between; // Spacing between elements inside the wrapper so that footer is pushed to bottom
   }
 
+  // Styling for paragraphs
   p {
     color: $background-dark;
   }
 
+  // Styling for hyperlinks
   a {
     text-decoration: none;
     color: $background-dark;
 
+    // Hover effect for hyperlinks
     &:hover {
       color: $primarycolor;
       transition-duration: 0.5s;
     }
   }
 
+  // Styling for a social media icon element with a hover effect
   .fa-brands:hover {
     color: $primarycolor;
     transition-duration: 0.5s;
   }
 
+  // Removing list bullets from list items
   li {
     list-style: none;
   }

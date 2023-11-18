@@ -1,12 +1,8 @@
 @import "../../style";
 
-// Variables
-$primary-color: #d37556;
-$text-color: #e1dad2;
-
-// Common styles
+// Common styles for the entire page
 main {
-  color: white;
+  color: white; // Set text color to white unless otherwise specified
   font-size: 10px;
 }
 
@@ -14,41 +10,45 @@ img {
   width: 100%;
 }
 
+// Styling for page title element - this is the top of the "resume" page.
 .title {
-  color: $primary-color;
+  color: $primarycolor;
   font-weight: 700;
   font-size: 2rem;
   text-transform: uppercase;
 }
 
+// Styling for description paragraphs
 .description {
   p {
     font-size: 20px;
     margin-top: 16px;
     margin-bottom: 16px;
     font-weight: 400;
-    color: $text-color;
+    color: $background-primary;
   }
 }
 
-// Page Layout
+// Styling for the page layout container
 .container {
   max-width: 1000px;
   width: 90%;
   margin: 0 auto;
   display: grid;
   padding: 5rem;
-  background: #194a50;
+  background: $teal;
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
   border-radius: 16px;
 }
 
+// Styling for the profile section
 .profile {
   grid-column: 1 / -1;
   margin-bottom: 2rem;
 }
 
+// Styling for columns within the grid layout
 .column {
   &-1,
   &-2 {
@@ -58,7 +58,7 @@ img {
   }
 }
 
-// Profile section styling
+// Styling for the profile section's sub-elements
 .profile {
   &_container {
     display: flex;
@@ -78,7 +78,7 @@ img {
 
     &_lastName {
       text-transform: uppercase;
-      color: $primary-color;
+      color: $primarycolor;
       font-weight: 700;
       font-size: clamp(2.5rem, 15vw, 7rem);
       text-transform: uppercase;
@@ -90,7 +90,6 @@ img {
     font-size: 1.5rem;
     font-weight: 400;
     text-transform: uppercase;
-    color: white;
   }
 
   .resumedownload {
@@ -102,7 +101,7 @@ img {
   }
 }
 
-// Expertise section styling
+// Styling for the skills list
 .skills_list {
   margin-top: 1rem;
   margin-left: 2rem;
@@ -112,10 +111,10 @@ img {
   margin-top: 16px;
   margin-bottom: 16px;
   font-weight: 400;
-  color: $text-color;
+  color: $background-primary;
 }
 
-// Font styling for Education, Experience and Projects section titles
+// Styling for section titles (Education, Experience, Projects)
 .edu_child,
 .exp_child,
 .project_child {
@@ -123,7 +122,7 @@ img {
 
   .item_years {
     font-size: 1.4rem;
-    color: $primary-color;
+    color: $primarycolor;
     font-weight: 300;
   }
 
@@ -136,12 +135,12 @@ img {
 
   .item_subtitle {
     font-size: 1.4rem;
-    color: $primary-color;
+    color: $primarycolor;
     font-weight: 400;
   }
 }
 
-// Interests section styling
+// Styling for interests section
 .interest {
   &_parent {
     margin-top: 2rem;
@@ -158,19 +157,19 @@ img {
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
-    color: $text-color;
+    color: $background-primary;
   }
 }
 
-// Media queries
+// Media queries for tablet and mobile screens
 @media only screen and (max-width: $medium) {
   .profile_container {
-    flex-direction: column;
+    flex-direction: column; // Stack elements vertically on smaller screens
   }
 
   .container {
     width: 90%;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; // Use a single column layout
     padding: 3rem;
     gap: 7rem;
     border-radius: 8px;

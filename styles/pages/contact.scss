@@ -1,17 +1,20 @@
 @import "../../style";
 
+// Styling for the main element
 main {
   display: flex;
   flex-direction: column;
   justify-content: center; // With flex-grow this centers the .contact element vertically within the wrapper
   flex-grow: 1;
 
+  // Styling for the .contact section within the main element
   .contact {
     margin-top: 32px;
     display: flex;
     align-items: center;
     justify-content: center;
 
+    // Styling for the .contact-image section within .contact
     .contact-image {
       img {
         height: 300px;
@@ -20,6 +23,7 @@ main {
       }
     }
 
+    // Styling for the .about-text section within .contact
     .about-text {
       h1 {
         text-align: center;
@@ -33,11 +37,11 @@ main {
   }
 }
 
-// responsive for smaller resolution screens
+// Responsive styling for smaller resolution screens
 body {
   @media (max-width: $medium) {
     .contact {
-      flex-direction: column;
+      flex-direction: column; // Stack child elements vertically on smaller screens
 
       .contact-image {
         text-align: center; // Center the image on smaller screens
@@ -46,7 +50,7 @@ body {
 
         img {
           width: 100%;
-          height: auto;
+          height: auto; // Automatically adjust image height to maintain aspect ratio
         }
       }
 

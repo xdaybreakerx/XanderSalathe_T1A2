@@ -2,6 +2,7 @@
 @import "../defaults/breakpoints";
 @import "./utils";
 
+// Styling for the footer element
 footer {
   display: flex;
   margin-top: auto;
@@ -11,14 +12,15 @@ footer {
   position: relative;
   bottom: 0;
   height: 60px;
-  background-color: $background-primary;
+  background-color: $background-primary; // This is mainly for the home page due to the background image. If no background color selected it is difficult to see, so this increases visibility.
   flex-grow: 0;
   flex-shrink: 0;
 
+  // Styling for the social media links section within the footer
   .social-media {
     display: flex;
     align-items: center;
-    margin-right: 32px; // Space between .social-media and .info on wider screens
+    margin-right: 32px; // Space between .social-media and .info on smaller screens
 
     a {
       i {
@@ -34,14 +36,10 @@ footer {
       }
     }
   }
-
-  .info {
-    color: black;
-  }
 }
 
-// Media query for footer
-@media screen and (min-width: $medium) {
+// Media query for the footer on larger screens
+@media screen and (min-width: $large) {
   footer {
     justify-content: space-between; // Distribute space between .social-media and .info on wider screens
     padding: 0 20px; // Add padding on the sides for larger screens
